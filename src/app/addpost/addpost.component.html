@@ -1,0 +1,16 @@
+ <div class="col-md-6">
+ <form [formGroup]="addPost" (ngSubmit)="submitData()">
+  <div>
+    <label for="post_title">Post Title:</label>
+    <input type="text" class="form-control" formControlName="post_title" id="post_title" >
+  </div>
+  <div>
+    <label for="post_content">Post Content:</label>
+    <input type="text" class="form-control" id="post_content" formControlName="post_content" >
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox">Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> 
+</div>
