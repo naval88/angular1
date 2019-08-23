@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {Observable} from "rxjs/index";
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
@@ -17,6 +18,7 @@ import { ListProductsComponent } from './list-products/list-products.component';
 import { EmployeeAlertComponent } from './employee-alert/employee-alert.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { AdduserComponent } from './adduser/adduser.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     EmployeeAlertComponent,
     EmployeeDetailsComponent,
     ProductDetailsComponent
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
