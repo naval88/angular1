@@ -30,7 +30,7 @@ import { AdduserComponent } from './adduser/adduser.component';
     ListProductsComponent,
     EmployeeAlertComponent,
     EmployeeDetailsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
     AdduserComponent
   ],
   imports: [
