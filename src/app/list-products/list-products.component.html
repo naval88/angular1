@@ -1,0 +1,14 @@
+<h2>Employee</h2>
+
+<div *ngFor="let employee of employees">
+
+  <h3>
+    <a [title]="employee.name + ' details'">
+      {{ employee.name }}
+    </a>
+  </h3>
+  <p (click)="share()">
+  	Share
+  </p>
+
+</div>
