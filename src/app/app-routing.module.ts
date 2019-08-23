@@ -7,6 +7,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ListEmployeeComponent } from './list-employee/list-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ListProductsComponent } from './list-products/list-products.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
 	{'path' : '', 'component':HomeComponent},
@@ -14,8 +16,11 @@ const routes: Routes = [
 	{'path' : 'add-post', 'component':AddpostComponent},
 	{'path' : 'add-employee', 'component':AddEmployeeComponent},
 	{'path' : 'list-employee', 'component':ListEmployeeComponent},
-	{'path' : 'edit-employee', 'component':EditEmployeeComponent},	
+	{'path' : 'edit-employee', 'component':EditEmployeeComponent},
+	{'path' : 'employee-details', 'component':EmployeeDetailsComponent},		
 	{'path' : 'list-products', 'component':ListProductsComponent},	
+	{'path' : 'product-details/:employeeId', 'component':ProductDetailsComponent},	
+	
 ];
 
 @NgModule({

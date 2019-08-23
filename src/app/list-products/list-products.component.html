@@ -1,14 +1,20 @@
-<h2>Employee</h2>
-
-<div *ngFor="let employee of employees">
-
-  <h3>
-    <a [title]="employee.name + ' details'">
-      {{ employee.name }}
-    </a>
-  </h3>
-  <p (click)="share()">
-  	Share
-  </p>
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="text-align:center">List of Prdocuts</h2>
+            <div *ngFor="let product of products; index as productId">
+                <div class="card">
+                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>{{ product.name }}</h3>
+                    <p class="price">{{ product.price | currency }}</p>
+                    <p>{{ product.descrition }}</p>
+                    <p><button>Add to Cart</button></p>
+                    <p> <a [title]
+                        ="product.name + ' details'" [routerLink]="['/product-details',productId]">View</a>
+                    </p>
+                    <p (click)="share()">Share</p> 
+                </div>  
+            </div>
+        </div>
+    </div>
 </div>

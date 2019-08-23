@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<app-list-products>
+			</app-list-products>	
+		</div>
+		<div class="col-md-8">
+			<h2>Product Details</h2>
+			<div *ngIf="product">
+			  <h3>{{ product.name }}</h3>
+			  <h4>{{ product.price | currency }}</h4>
+			  <p>{{ product.description }}</p>
+			</div>
+		</div>
+	</div>
+</div>

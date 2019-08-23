@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { products } from '../product';
 
 @Component({
   selector: 'app-list-products',
@@ -7,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListProductsComponent implements OnInit {
   
-  employees = [ {'name':'naval','description':'Angular Developer', 'exp':7},
-  				{'name':'pankag','description':'Php Developer','exp':4},
-
-  				];
+  products = products;
 
   constructor() { }
 
