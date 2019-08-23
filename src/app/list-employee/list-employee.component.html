@@ -1,0 +1,26 @@
+<div class="col-md-9 user-container">
+  <h2 style="margin: auto text-center"> Employee Details</h2>
+  <button class="btn btn-danger" style="width:300px" (click)="addEmployee()"> Add Employee</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">S.No</th>
+      <th>Employee Name</th>
+      <th>Employee Age</th>
+      <th>Employee Salary</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employes | paginate: { itemsPerPage: 10, currentPage: p }; let i = index">
+      <td class="hidden">{{i+1}}</td>
+      <td>{{employee.employee_name}}</td>
+      <td>{{employee.employee_salary}}</td>
+      <td>{{employee.employee_age}}</td>
+      <td><button class="btn btn-success" (click)="deleteUser(employee)"> Delete</button>&nbsp;
+        <button class="btn btn-success" (click)="editEmployee(employee)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
